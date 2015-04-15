@@ -1,0 +1,110 @@
+$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.logo {
+  height: 54px;
+  margin: 20px;
+  background: {
+      image: url('../../images/mbc_logo.png');
+      position: center;
+      size: contain;
+      repeat: no-repeat;
+    }
+}
+
+.carousel {
+  width: 860px;
+  height: 573px;
+  display: table;
+  margin: auto;
+}
+.carousel-inner {
+  overflow: visible;
+  & > div {
+    height: 573px;
+    background: {
+      position: center;
+      size: contain;
+      repeat: no-repeat;
+    }
+  }
+}
+
+.quickview {
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  position: absolute;
+  margin: 593px 366px;
+  display: table;
+  text-align: center;
+  border: 2px solid #333;
+  color: #333;
+  font-size: 18px;
+  &:hover {
+    cursor: pointer;
+  };
+}
+
+.modal-dialog {
+  width: 83%;
+}
+.modal-content {
+  border-radius: 0;
+  padding: 0;
+}
+
+.product {
+  display: table;
+  width: 100%;
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: 14px;
+  }
+  .image {
+    background-size: cover;
+    height: 396px;
+    width: 70%;
+  }
+  .details {
+    width: 30%;
+    padding: 20px;
+  }
+  .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+  }
+  .description {
+    padding: 20px 0 0 0;
+  }
+  .buy {
+    color: #FFF;
+    background-color: green;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 20px auto;
+    display: table;
+    &:hover {
+      cursor: pointer;
+    };
+  }
+  & > div {
+    float: left;
+  }
+}
