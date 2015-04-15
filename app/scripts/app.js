@@ -23,20 +23,20 @@ angular
 
       $scope.storeData = {};
 
-        $.get('http://seq-front-end-assessment.s3-website-us-west-2.amazonaws.com/catalog.json', function (data) {
+      $.get('http://seq-front-end-assessment.s3-website-us-west-2.amazonaws.com/catalog.json', function (data) {
 
-          $scope.storeData = data;
-          $scope.$apply();
+        $scope.storeData = data;
+        $scope.$apply();
 
-          $scope.$on('postCarouselDirective', function(scope, element, attrs){    
+        $scope.$on('postCarouselDirective', function(scope, element, attrs){    
 
-            // Load cover social icons
-            $('.carousel-inner > div:first-child').addClass('active');
-            $('#myCarousel li:first-child').addClass('active');
-
-          });
+          // Load cover social icons
+          $('.carousel-inner > div:first-child').addClass('active');
+          $('#myCarousel li:first-child').addClass('active');
 
         });
+
+      });
 
   })
   .directive('postCarouselDirective',function(){
